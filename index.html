@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Events</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .page-section {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+      .page-section.active {
+        display: block;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo" data-page="home"><span>a</span>ura</a>
+      <nav class="navbar">
+        <a href="#" data-page="home">home</a>
+        <a href="#" data-page="about">about</a>
+        <a href="#" data-page="services">services</a>
+        <a href="#" data-page="budget">budget calculator</a>
+        <a href="#" data-page="guests">guest list</a>
+        <a href="#" data-page="contact">contact</a>
+      </nav>
+      <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+    <section class="page-section home" id="home">
+      <div class="content">
+        <h3>
+          plan your dream event
+          <span> aura events </span>
+        </h3>
+        <a href="#" class="btn" data-page="services">start planning</a>
+      </div>
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/home1.jpg" alt="Wedding" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/home2.jpg" alt="Webinar" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/home4.jpg" alt="Christmas" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/home6.jpg" alt="Concert" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/home7.jpg" alt="Marriage" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+      <div class="row">
+        <div class="image">
+          <img src="images/about.jpg" alt="Team" />
+        </div>
+        <div class="content">
+          <h3>crafting unforgettable virtual events</h3>
+          <p>
+            Aura Events helps you design seamless online events, from weddings to
+            webinars, with intuitive tools and creative solutions.
+          </p>
+          <p>
+            Our team of experts ensures every detail aligns with your vision,
+            making your event a memorable experience.
+          </p>
+          <a href="#" class="btn" data-page="contact">reach us</a>
+        </div>
+      </div>
+      <h1 class="sub-heading">OUR TEAM</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/team1.jpg" alt="Mohammad Hussain" />
+          <h3>Mohammad Hussain</h3>
+          <span>Event Project Lead</span>
+          <div class="social">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/team2.jpg" alt="Hema Sagar" />
+          <h3>Hema Sagar</h3>
+          <span>Creative Director</span>
+          <div class="social">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/team3.jpg" alt="Alekhya" />
+          <h3>Alekhya</h3>
+          <span>Logistics Coordinator</span>
+          <div class="social">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/team4.jpg" alt="Satya Molika" />
+          <h3>Satya Molika</h3>
+          <span>Technical Lead</span>
+          <div class="social">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/team5.jpg" alt="Guru Sai" />
+          <h3>Guru Sai</h3>
+          <span>Marketing Specialist</span>
+          <div class="social">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/team6.jpg" alt="Sai Deepika" />
+          <h3>Sai Deepika</h3>
+          <span>Client Relations Manager</span>
+          <div class="social">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section service" id="services">
+      <h1 class="heading">our <span>services</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>invitation design</h3>
+          <p>Create personalized digital invitations.</p>
+          <a href="#" class="btn">preview</a>
+        </div>
+        <div class="box">
+          <i class="fas fa-photo-video"></i>
+          <h3>live streaming</h3>
+          <p>Professional streaming for virtual events.</p>
+          <a href="#" class="btn">preview</a>
+        </div>
+        <div class="box">
+          <i class="fas fa-music"></i>
+          <h3>entertainment</h3>
+          <p>Virtual DJs and live performances.</p>
+          <a href="#" class="btn">preview</a>
+        </div>
+        <div class="box">
+          <i class="fas fa-users"></i>
+          <h3>guest management</h3>
+          <p>Track and manage attendees effortlessly.</p>
+          <a href="#" class="btn">preview</a>
+        </div>
+        <div class="box">
+          <i class="fas fa-calendar-check"></i>
+          <h3>event planning consultation</h3>
+          <p>Personalized virtual consultations to plan your event.</p>
+          <a href="#" class="btn">preview</a>
+        </div>
+        <div class="box">
+          <i class="fas fa-laptop-code"></i>
+          <h3>virtual event platform</h3>
+          <p>Customized platform for hosting seamless virtual events.</p>
+          <a href="#" class="btn">preview</a>
+        </div>
+      </div>
+    </section>
+    <section class="page-section budget" id="budget">
+      <h1 class="heading">budget <span>calculator</span></h1>
+      <div class="content">
+        <h3>plan your expenses</h3>
+        <div class="inputBox">
+          <input type="number" placeholder="Venue ($)" min="0" id="venue" />
+          <input type="number" placeholder="Catering ($)" min="0" id="catering" />
+        </div>
+        <div class="inputBox">
+          <input type="number" placeholder="Decor ($)" min="0" id="decor" />
+          <input type="number" placeholder="Entertainment ($)" min="0" id="entertainment" />
+        </div>
+        <p>Total: $<span id="total">0</span></p>
+        <button class="btn" id="save-budget">Save Budget</button>
+      </div>
+    </section>
+    <section class="page-section guests" id="guests">
+      <h1 class="heading">guest <span>list</span></h1>
+      <div class="content">
+        <h3>manage attendees</h3>
+        <div class="inputBox">
+          <input type="text" placeholder="Guest Name" id="guest-name" />
+          <input type="email" placeholder="Guest Email" id="guest-email" />
+        </div>
+        <button class="btn" id="add-guest">Add Guest</button>
+        <table id="guest-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="page-section contact" id="contact">
+      <h2 class="sub-heading">CONTACT US</h2>
+      <form id="contact-form">
+        <div class="inputBox">
+          <input type="text" placeholder="name" id="name" required />
+          <input type="email" placeholder="email" id="email" required />
+        </div>
+        <div class="inputBox">
+          <input type="tel" placeholder="number" id="phone" />
+          <input type="text" placeholder="subject" id="subject" required />
+        </div>
+        <textarea
+          placeholder="message"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>branches</h3>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> bangalore</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> hyderabad</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> delhi</a>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#" data-page="home"><i class="fas fa-arrow-right"></i> home</a>
+          <a href="#" data-page="about"><i class="fas fa-arrow-right"></i> about</a>
+          <a href="#" data-page="services"><i class="fas fa-arrow-right"></i> services</a>
+          <a href="#" data-page="budget"><i class="fas fa-arrow-right"></i> budget calculator</a>
+          <a href="#" data-page="guests"><i class="fas fa-arrow-right"></i> guests</a>
+          <a href="#" data-page="contact"><i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+          <a href="#"><i class="fas fa-envelope"></i> contact@auraevents.com</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> bangalore, india</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+        </div>
+      </div>
+      <div class="credit">
+        created by <span>Aura Team</span> | all rights reserved
+      </div>
+    </section>
+    <div class="theme-toggler">
+      <div class="toggle-btn">
+        <i class="fas fa-cog"></i>
+      </div>
+      <h3>choose color</h3>
+      <div class="buttons">
+        <div class="theme-btn" style="background: #ccff33"></div>
+        <div class="theme-btn" style="background: #d35400"></div>
+        <div class="theme-btn" style="background: #3498db"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const menu = document.querySelector("#menu-bars");
+        const navbar = document.querySelector(".navbar");
+        if (menu && navbar) {
+          menu.onclick = () => {
+            menu.classList.toggle("fa-times");
+            navbar.classList.toggle("active");
+          };
+        }
+        const themeToggler = document.querySelector(".theme-toggler");
+        const toggleBtn = document.querySelector(".toggle-btn");
+        if (toggleBtn && themeToggler) {
+          toggleBtn.onclick = () => {
+            themeToggler.classList.toggle("active");
+          };
+        }
+        window.onscroll = () => {
+          if (menu && navbar) {
+            menu.classList.remove("fa-times");
+            navbar.classList.remove("active");
+          }
+          if (themeToggler) {
+            themeToggler.classList.remove("active");
+          }
+        };
+        document.querySelectorAll(".theme-toggler .theme-btn").forEach((btn) => {
+          btn.onclick = () => {
+            let color = btn.style.background;
+            document.querySelector(":root").style.setProperty("--theme-color", color);
+          };
+        });
+        const sections = document.querySelectorAll(".page-section");
+        const navLinks = document.querySelectorAll("[data-page]");
+        function showSection(page) {
+          sections.forEach((section) => {
+            section.classList.remove("active");
+          });
+          const activeSection = document.querySelector(`#${page}`);
+          if (activeSection) {
+            activeSection.classList.add("active");
+            window.scrollTo(0, 0); // Scroll to top
+            console.log(`Navigated to section: ${page}`); // Debug log
+          } else {
+            console.error(`Section #${page} not found`); // Debug error
+          }
+        }
+        navLinks.forEach((link) => {
+          link.onclick = (e) => {
+            e.preventDefault();
+            const page = link.dataset.page;
+            showSection(page);
+            history.pushState(null, null, `#${page}`);
+          };
+        });
+        window.onpopstate = () => {
+          const page = window.location.hash.slice(1) || "home";
+          showSection(page);
+        };
+        const initialPage = window.location.hash.slice(1) || "home";
+        showSection(initialPage);
+        if (document.querySelector(".home-slider")) {
+          new Swiper(".home-slider", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2,
+              slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+          });
+        }
+        const budgetInputs = document.querySelectorAll(".budget .content input");
+        const totalElement = document.querySelector("#total");
+        const saveBudgetBtn = document.querySelector("#save-budget");
+        if (budgetInputs.length > 0 && totalElement) {
+          const updateTotal = () => {
+            let total = 0;
+            budgetInputs.forEach((input) => {
+              total += Number(input.value) || 0;
+            });
+            totalElement.textContent = total;
+          };
+          budgetInputs.forEach((input) => {
+            input.addEventListener("input", updateTotal);
+          });
+          if (saveBudgetBtn) {
+            saveBudgetBtn.onclick = () => {
+              const budget = {
+                venue: document.querySelector("#venue").value || 0,
+                catering: document.querySelector("#catering").value || 0,
+                decor: document.querySelector("#decor").value || 0,
+                entertainment: document.querySelector("#entertainment").value || 0,
+              };
+              localStorage.setItem("budget", JSON.stringify(budget));
+              alert("Budget saved!");
+            };
+            const savedBudget = JSON.parse(localStorage.getItem("budget"));
+            if (savedBudget) {
+              document.querySelector("#venue").value = savedBudget.venue;
+              document.querySelector("#catering").value = savedBudget.catering;
+              document.querySelector("#decor").value = savedBudget.decor;
+              document.querySelector("#entertainment").value = savedBudget.entertainment;
+              updateTotal();
+            }
+          }
+        }
+        const addGuestBtn = document.querySelector("#add-guest");
+        const guestTableBody = document.querySelector("#guest-table tbody");
+        if (addGuestBtn && guestTableBody) {
+          const loadGuests = () => {
+            guestTableBody.innerHTML = "";
+            const guests = JSON.parse(localStorage.getItem("guests")) || [];
+            guests.forEach((guest, index) => {
+              const row = document.createElement("tr");
+              row.innerHTML = `
+                <td>${guest.name}</td>
+                <td>${guest.email}</td>
+                <td><button class="delete-guest" data-index="${index}">Delete</button></td>
+              `;
+              guestTableBody.appendChild(row);
+            });
+            document.querySelectorAll(".delete-guest").forEach((btn) => {
+              btn.onclick = () => {
+                const index = btn.dataset.index;
+                const guests = JSON.parse(localStorage.getItem("guests")) || [];
+                guests.splice(index, 1);
+                localStorage.setItem("guests", JSON.stringify(guests));
+                loadGuests();
+              };
+            });
+          };
+          addGuestBtn.onclick = () => {
+            const name = document.querySelector("#guest-name").value.trim();
+            const email = document.querySelector("#guest-email").value.trim();
+            if (name && email) {
+              const guests = JSON.parse(localStorage.getItem("guests")) || [];
+              guests.push({ name, email });
+              localStorage.setItem("guests", JSON.stringify(guests));
+              document.querySelector("#guest-name").value = "";
+              document.querySelector("#guest-email").value = "";
+              loadGuests();
+            } else {
+              alert("Please enter both name and email.");
+            }
+          };
+          loadGuests();
+        }
+        const contactForm = document.querySelector("#contact-form");
+        if (contactForm) {
+          contactForm.onsubmit = (e) => {
+            e.preventDefault();
+            const name = document.querySelector("#name").value.trim();
+            const email = document.querySelector("#email").value.trim();
+            const subject = document.querySelector("#subject").value.trim();
+            if (name && email && subject) {
+              alert("Message sent! (This is a front-end demo.)");
+              contactForm.reset();
+            } else {
+              alert("Please fill in all required fields.");
+            }
+          };
+        }
+      });
+    </script>
+  </body>
+</html>

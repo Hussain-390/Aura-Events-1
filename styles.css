@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --theme-color: #3867d6;
+}
+.about .box-container .box img {
+  border-radius: 50%;
+  border: 2px solid #3498db;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: #222;
+}
+section {
+  padding: 2rem 9%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+.header .logo {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 2.5rem;
+}
+.header .logo span {
+  color: var(--theme-color);
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+.header .navbar a:hover {
+  color: var(--theme-color);
+}
+#menu-bars {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  background: #666;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover {
+  background: var(--theme-color);
+}
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.heading span {
+  color: var(--theme-color);
+  text-transform: uppercase;
+}
+/* Home Section */
+.home .content {
+  text-align: center;
+  padding-top: 6rem;
+  margin: 2rem auto;
+  max-width: 70rem;
+}
+.home .content h3 {
+  color: #fff;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+.home .content h3 span {
+  color: var(--theme-color);
+  text-transform: uppercase;
+}
+.home .content p {
+  color: #eee;
+  font-size: 2rem;
+}
+.home .home-slider .swiper-slide {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 50rem;
+  width: 35rem;
+}
+.home .home-slider .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+  padding: 1rem;
+}
+.about .row .image img {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1rem solid #333;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+}
+.about .row .content h3 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+.about .row .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.about .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.about .box-container .box {
+  border-radius: 0.5rem;
+  background: #333;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.about .box-container .box img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.about .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.about .box-container .box span {
+  font-size: 1.5rem;
+  color: var(--theme-color);
+}
+.about .box-container .box .social {
+  margin-top: 1rem;
+}
+.about .box-container .box .social a {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.about .box-container .box .social a:hover {
+  color: var(--theme-color);
+}
+.about .box-container .box:hover {
+  transform: scale(1.03);
+}
+.service .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+.service .box-container .box {
+  border-radius: 0.5rem;
+  background: #333;
+  text-align: center;
+  padding: 2.5rem;
+}
+.service .box-container .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  background: var(--theme-color);
+  color: #fff;
+}
+.service .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.service .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.8;
+}
+.budget .content {
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.budget .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.budget .content .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.budget .content .inputBox input {
+  width: 49%;
+  background: #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.budget .content .inputBox input::placeholder {
+  color: #eee;
+}
+.budget .content p {
+  font-size: 2rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+.guests .content {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.guests .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.guests .content .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.guests .content .inputBox input {
+  width: 49%;
+  background: #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.guests .content .inputBox input::placeholder {
+  color: #eee;
+}
+.guests .content table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+.guests .content table th,
+.guests .content table td {
+  border: 0.1rem solid #444;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #eee;
+  text-align: left;
+}
+.guests .content table th {
+  background: var(--theme-color);
+  color: #fff;
+}
+.guests .content table td button {
+  background: #666;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.guests .content table td button:hover {
+  background: var(--theme-color);
+}
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+.contact form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form .inputBox input,
+.contact form textarea {
+  width: 100%;
+  background: #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+}
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder {
+  color: #eee;
+  text-transform: capitalize;
+}
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+  background: #444;
+}
+.contact form .inputBox input {
+  width: 49%;
+}
+.contact form textarea {
+  resize: none;
+}
+.footer {
+  background: #111;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #eee;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--theme-color);
+}
+.footer .box-container .box a:hover i {
+  padding-right: 1.5rem;
+  color: #fff;
+}
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid #222;
+  color: #fff;
+  padding: 2rem;
+  padding-top: 2.5rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.footer .credit span {
+  color: var(--theme-color);
+}
+.theme-toggler {
+  position: fixed;
+  top: 10rem;
+  right: -20rem;
+  background: #333;
+  z-index: 1000;
+  width: 20rem;
+  text-align: center;
+}
+.theme-toggler.active {
+  right: 0;
+}
+.theme-toggler h3 {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.theme-toggler .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.theme-toggler .buttons .theme-btn {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.about {
+  margin-top: 80px;
+}
+.about h2,
+.about h1.heading {
+  color: white;
+}
+.about h2:nth-of-type(2) {
+  margin: 2rem 0 1rem;
+}
+.theme-toggler .toggle-btn {
+  position: absolute;
+  top: 0;
+  left: -5.9rem;
+  padding: 1.3rem 1.5rem;
+  background: #333;
+  cursor: pointer;
+}
+.theme-toggler .toggle-btn i {
+  color: #fff;
+  font-size: 3rem;
+  animation: spin 4s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #444;
+}
+.contact .sub-heading {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--theme-color);
+  margin: 0rem 0 2rem;
+}
+.service .sub-heading {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--theme-color);
+  margin: 3rem 0 2rem;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 5rem;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu-bars {
+    display: initial;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 0.1rem solid #222;
+    background: #333;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+  .header .navbar a {
+    display: flex;
+    background: #222;
+    border-radius: 0.5rem;
+    padding: 1.3rem;
+    margin: 1.3rem;
+    font-size: 2rem;
+  }
+  .home .content h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .home .home-slider .swiper-slide {
+    width: 27rem;
+  }
+  .contact form .inputBox input,
+  .budget .content .inputBox input,
+  .guests .content .inputBox input {
+    width: 100%;
+  }
+  .about .box-container .box img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+.about .sub-heading {
+  text-align: center;
+  font-size: 4rem;
+  color: var(--theme-color);
+  margin: 3rem 0 2rem;
+}
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--theme-color); /* Customize with your theme color */
+  outline-offset: 4px;  /* Optional for better separation */
+}
